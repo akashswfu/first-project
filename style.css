@@ -2,18 +2,14 @@
     margin: 0;
     font-family: 'Open Sans',sans-serif;
 }
-.container{
-    width: 1200px;
-    margin: 0 auto;
-}
+/* Header section */
 .header-section{
     width: 100%;
     height: 100vh;
-    background-image: url("/images/banner/banner1.png"),linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.4));
+    background-image: url("/images/banner/banner1.png"),linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.1));
     background-blend-mode: overlay;
-    background-color: grey;
     background-repeat: none;
-    background-size: cover;
+    background-size: cover; 
     display: flex;
     justify-content: right;
     align-items: center;
@@ -25,68 +21,91 @@
     margin: 6rem;
     text-align: right;
 }
-.title{
-    font-weight: 700;
+.header-title{
+    font-weight: 800;
     font-size: 65px;
     margin-bottom: 20px;
 }
-.sub-title{
+.header-sub-title{
     font-weight: 400;
     font-size: 16px;
     line-height: 26px;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
+    color: #444343;
 }
-.btn{
+.primary-btn{
     font-size: 20px;
     font-weight: 600;
     height: 60px;
     border: 0;
     padding: 18px 35px;
     border-radius: 5px;
+    line-height: 23px;
     
 }
 .contact-btn{
     color:#FFFFFF;
-    background:#cf1b0e;
+    background:#F15B22;
+    text-align: center;
+    
+   
 }
-/* previouse year section */
+/* middle section , photo and content part */
 
 
-.previous-year{
+.middle-section{
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 6rem;
     gap: 120px;
 }
-
-.previous-year-image img{
-    height: 700px;
-    width: 570px;
+.person-image img{
+    height: 650px;
+    width: 530px;
     margin-left: 50px;
+
 }
-.previous-year-image{
+.person-image{
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-right: 30px;
 }
-.list-item{
-    list-style: none;    
-}
-.previous-year-content ul li i{
-    color: green !important;
-}
-.previous-title{
+.previous-year-content-title{
     font-weight: 700;
     font-size: 40px;
     margin-bottom: 20px;
+    line-height: 47px;
 }
-.description{
+.previous-year-content-description{
     font-weight: 400;
     font-size: 16px;
     margin-bottom: 20px;
     padding-right: 12rem;
+    line-height: 26px;
+    color: #444343;
 }
+
+.list-item{
+    list-style: none;  
+    margin: 0;
+    padding: 0;  
+}
+.previous-year-content ul li i{
+    color: green !important;
+}
+li{
+    columns: #444343;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+}
+i{
+    margin-right: 10px;
+}
+/* Course Plan section */
+
 .my-plan{
     text-align: center;
     font-weight: 900;
@@ -95,24 +114,32 @@
 }
 .course-plan{
     display: flex;
-    justify-content: center;
-    gap: 170px;
+    justify-content: space-between;
+    gap: 10px;
     align-items: center;
     text-align: center;
-    margin-bottom: 200px;
+    width: 70%;
+    margin: 0 auto;
+    margin-bottom: 120px;
 }
-.course, img{
-    width: 90px;
-    height: 90px;
+.course img{
+    width: 80px;
+    height: 80px;
 }
 .course-title{
     font-weight: 700;
-   
+    font-size: 25px;
+    line-height: 35px;
+    margin-top: 13px;
 }
 .course-description{
     font-weight: 500;
+    font-size: 20px;
+    line-height: 29px;
+    margin-top: 8px;
 }
-.content{
+/* Call now section */
+.call-now{
     background: url("./images/gradient2.png"),url("./images/watch.png");
     width:67%;
     padding: 5rem;
@@ -122,19 +149,23 @@
     margin: auto;
     margin-bottom: 130px;
 }
-.content-description{
+.call-now-description{
     color: white;
     font-weight: 700;
     font-size: 40px;
-    margin-bottom: 15px;
+    margin-bottom: 25px;
+    line-height: 46px;
 }
 .call-button{
-    color: #cf1b0e;
+    color: #F15B22;
     background: white;
 }
+/* Footer section */
 .footer-section{
     background-color: black;
-    height: 570px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 }
 
 .social{
@@ -149,9 +180,11 @@
 .parent-part{
     display: flex;
     justify-content: center;
-    gap: 100px;
-    padding: 100px 200px;
-    margin-right: 130px;
+    gap: 10px;
+    padding: 5rem 0 5rem 10rem;
+    align-items: center;
+    width: 67%;
+    margin: 0 auto;
 }
 .footer-right-content,.footer-left-content{
     color: white;
@@ -160,21 +193,26 @@
     font-size: 45px;
     font-weight: 700;
     margin-bottom: 20px;
+    line-height: 52px;
 }
 .footer-description{
     font-weight: 400;
     font-size: 16px;
     margin-bottom: 15px;
+    line-height: 26px;
+    width: 60%;
 }
 .subscribe-title{
     font-weight: 600;
     font-size: 25px;
-    margin-bottom: 35px;
+    margin-bottom: 30px;
+
     
 }
 .footer-right-content{
-    margin-top: 20px;
+    margin-top: -100px
 }
+
 .footer-right-content input{
     margin-bottom: 15px;
     width: 250px;
@@ -182,5 +220,12 @@
     border-radius: 5px;
     background-color: black;
     border-color: white;
+}
+/* Copy right part */
+.copy-right{
+    background-color: rgb(99, 94, 94);
+    color: white;
+    text-align: center;
+    padding: 10px;
 }
 
